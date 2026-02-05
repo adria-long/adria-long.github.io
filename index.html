@@ -3,100 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Org</title>
+    <title>MAES | Texas A&M Chapter</title>
 
-    <!-- Tailwind via CDN (easy for GitHub Pages) -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font (similar clean look) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Nice font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-
-    <style>
-      body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
 
-  <body class="bg-neutral-950 text-white">
-    <header class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
-      <div class="font-extrabold tracking-tight text-xl">Your Org</div>
-      <nav class="hidden md:flex gap-6 text-white/80">
-        <a href="#about" class="hover:text-white">About</a>
-        <a href="#events" class="hover:text-white">Events</a>
-        <a href="#join" class="hover:text-white">Join</a>
-      </nav>
-      <a href="#join" class="rounded-full bg-white text-black px-4 py-2 font-semibold hover:opacity-90">
-        Get involved
-      </a>
+  <body>
+    <!-- Top bar -->
+    <header class="topbar">
+      <div class="topbar__inner">
+        <a class="brand" href="./">
+          <!-- Left logo -->
+          <!-- Put your logo at /assets/maes-mark.png (or change the path) -->
+          <img class="brand__logo" src="./assets/maes-mark.png" alt="MAES logo" />
+          <div class="brand__text">
+            <div class="brand__name">MAES: LATINOS IN ENGINEERING &amp; SCIENCE</div>
+            <div class="brand__sub">Texas A&amp;M Chapter | Region 2</div>
+          </div>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav__link" href="#home">Home</a>
+          <a class="nav__link nav__link--active" href="#about">About</a>
+
+          <div class="nav__dropdown" id="moreDropdown">
+            <button class="nav__link nav__button" type="button" aria-haspopup="menu" aria-expanded="false">
+              More
+              <span class="chev" aria-hidden="true">▾</span>
+            </button>
+            <div class="menu" role="menu" aria-label="More">
+              <a role="menuitem" class="menu__item" href="#events">Events</a>
+              <a role="menuitem" class="menu__item" href="#join">Join</a>
+              <a role="menuitem" class="menu__item" href="#contact">Contact</a>
+            </div>
+          </div>
+
+          <!-- Instagram icon -->
+          <a class="iconbtn" href="https://instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <!-- simple inline icon -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
+              />
+            </svg>
+          </a>
+        </nav>
+      </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-6">
-      <section class="py-20">
-        <div class="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm text-white/80">
-          ✨ Student org at Texas A&M
-        </div>
+    <!-- Hero -->
+    <main id="home" class="hero">
+      <section class="hero__inner">
+        <!-- Big center emblem -->
+        <!-- Put your emblem at /assets/maes-emblem.png (or change the path) -->
+        <img class="hero__emblem" src="./assets/maes-emblem.png" alt="MAES emblem" />
 
-        <h1 class="mt-6 text-5xl md:text-6xl font-extrabold tracking-tight">
-          A modern community for <span class="text-white/70">builders & leaders.</span>
-        </h1>
+        <h1 class="hero__title">MAES: LATINOS IN ENGINEERING &amp; SCIENCE</h1>
 
-        <p class="mt-6 max-w-2xl text-lg text-white/70">
-          Replace this with your org’s mission in 1–2 sentences. Keep it short and punchy.
-        </p>
-
-        <div class="mt-8 flex gap-3">
-          <a href="#join" class="rounded-2xl bg-white text-black px-6 py-3 font-semibold hover:opacity-90">
-            Join now
-          </a>
-          <a href="#events" class="rounded-2xl border border-white/15 px-6 py-3 font-semibold text-white/90 hover:bg-white/5">
-            See events
-          </a>
-        </div>
-
-        <div class="mt-12 grid md:grid-cols-3 gap-4">
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <div class="text-sm text-white/60">Workshops</div>
-            <div class="mt-2 font-semibold">Hands-on skill building</div>
-          </div>
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <div class="text-sm text-white/60">Networking</div>
-            <div class="mt-2 font-semibold">Meet mentors & peers</div>
-          </div>
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <div class="text-sm text-white/60">Community</div>
-            <div class="mt-2 font-semibold">A place to belong</div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="py-16 border-t border-white/10">
-        <h2 class="text-3xl font-extrabold">About</h2>
-        <p class="mt-4 max-w-3xl text-white/70">
-          Put your org story here. Aim for 3–5 sentences.
+        <p class="hero__desc">
+          MAES is a cultural-based, professional student organization, created by and for individuals who are passionate
+          about maintaining cultural affiliation while pursuing professional goals. New members are always welcome, so
+          fill out our interest form now!
         </p>
       </section>
-
-      <section id="events" class="py-16 border-t border-white/10">
-        <h2 class="text-3xl font-extrabold">Events</h2>
-        <p class="mt-4 text-white/70">List upcoming events or embed a calendar later.</p>
-      </section>
-
-      <section id="join" class="py-16 border-t border-white/10">
-        <h2 class="text-3xl font-extrabold">Join</h2>
-        <p class="mt-4 text-white/70">Add your join form link, GroupMe, or interest form.</p>
-        <a class="mt-6 inline-block rounded-2xl bg-white text-black px-6 py-3 font-semibold hover:opacity-90" href="#">
-          Interest form
-        </a>
-      </section>
-
-      <footer class="py-10 border-t border-white/10 text-white/60 text-sm">
-        © <span id="year"></span> Your Org • Built with GitHub Pages
-      </footer>
     </main>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <!-- Sections (placeholders so nav works) -->
+    <section id="about" class="section">
+      <div class="section__inner">
+        <h2>About</h2>
+        <p>Add your About content here.</p>
+      </div>
+    </section>
+
+    <section id="events" class="section">
+      <div class="section__inner">
+        <h2>Events</h2>
+        <p>Add events content here.</p>
+      </div>
+    </section>
+
+    <section id="join" class="section">
+      <div class="section__inner">
+        <h2>Join</h2>
+        <p>Add your interest form link here.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section__inner">
+        <h2>Contact</h2>
+        <p>Add contact info here.</p>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
   </body>
 </html>
