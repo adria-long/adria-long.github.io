@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css?v=1.0.2" />
 </head>
 <body>
 
@@ -49,14 +49,64 @@
     </div>
     </header>
 
+    <main class="about">
+    <div class="about__inner">
 
-  <main class="page">
-    <div class="page__inner">
-      <h1 class="page__title">About</h1>
-      <p class="page__text">Add your About content here.</p>
+        <header class="about__header">
+        <span class="about__kicker">Texas A&amp;M Chapter • Region 2</span>
+        <h1 class="about__title">About MAES</h1>
+        </header>
+
+        <!-- Big “Who We Are” card -->
+        <section class="card card--hero" aria-label="Who we are">
+        <h2 class="card__title">Who We Are</h2>
+        <p class="card__text">
+            MAES is an inclusive organization that develops STEM leaders in academic, executive, and technical communities.
+            Our Texas A&amp;M chapter builds a welcoming environment where members grow professionally while staying connected
+            to their culture and community. We learn from one another, build lasting friendships, and create familia.
+        </p>
+
+        <div class="stats">
+            <div class="stat">
+            <div class="stat__num">50+</div>
+            <div class="stat__label">Active members</div>
+            </div>
+            <div class="stat">
+            <div class="stat__num">STEM</div>
+            <div class="stat__label">All majors welcome</div>
+            </div>
+            <div class="stat">
+            <div class="stat__num">1981</div>
+            <div class="stat__label">Founded</div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Mission + Vision -->
+        <section class="grid2" aria-label="Mission and Vision">
+        <article class="card">
+            <h2 class="card__title">Our Mission</h2>
+            <p class="card__text">
+            Develop students to be leaders of tomorrow’s workforce through mentoring, outreach, financial support,
+            and professional development. We promote, cultivate, and honor excellence in education and leadership
+            among Latino engineers and scientists.
+            </p>
+        </article>
+
+        <article class="card">
+            <h2 class="card__title">Our Vision</h2>
+            <p class="card__text">
+            Be the foremost Latino organization for the development of STEM leaders in academic, executive, and
+            technical communities. Create an everlasting Aggie familia that supports one another when it matters most.
+            </p>
+        </article>
+        </section>
+
+
     </div>
-  </main>
+    </main>
 
-  <script src="./script.js"></script>
+
+  <script src="./script.js?v=1.0.5"></script>
 </body>
 </html>
