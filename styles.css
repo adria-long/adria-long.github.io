@@ -193,13 +193,28 @@ body{
   filter: drop-shadow(0 10px 18px rgba(0,0,0,.35));
 }
 
-.hero__title{
-  margin: 0 auto;
-  max-width: 1000px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: clamp(28px, 4vw, 48px);
+.hero__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;              /* space between logo and text */
+  margin-bottom: 1.5rem;
+}
+
+.hero__emblem {
+  width: 250px;             /* adjust to taste */
+  height: auto;
+  flex-shrink: 0;
+}
+
+.hero__titles {
+  text-align: left;
+}
+
+.hero__title {
+  margin: 0;
+  line-height: 1.1;
+  font-size: 60px;
 }
 
 .hero__desc{
@@ -262,7 +277,7 @@ body{
 
 /* ===== Carousel ===== */
 .carousel{
-  margin: 12px auto 0;          /* gap from description */
+  margin: 30px auto 0;          /* gap from description */
   width: min(880px, 88vw);
 }
 
