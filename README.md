@@ -1,2 +1,2 @@
 # adria-long.github.io
-tester
+This is the TAMU MAES website created and designed by Adriana Long

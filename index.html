@@ -1,110 +1,84 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MAES | Texas A&M Chapter</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAES | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
 
-    <!-- Font (similar clean look) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="./index.html">
+        <img class="brand__logo" src="./images/Logo_white.png" alt="MAES logo" />
+        <div class="brand__text">
+          <div class="brand__name">MAES: LATINOS IN ENGINEERING &amp; SCIENCE</div>
+          <div class="brand__sub">Texas A&amp;M Chapter | Region 2</div>
+        </div>
+      </a>
 
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="./index.html">Home</a>
+        <a class="nav__link" href="./about.html">About</a>
 
-  <body>
-    <!-- Top bar -->
-    <header class="topbar">
-      <div class="topbar__inner">
-        <a class="brand" href="./">
-          <!-- Left logo -->
-          <!-- Put your logo at /assets/maes-mark.png (or change the path) -->
-          <img class="brand__logo" src="./images/Logo_white.png" alt="MAES white logo" />
-          <div class="brand__text">
-            <div class="brand__name">MAES: LATINOS IN ENGINEERING &amp; SCIENCE</div>
-            <div class="brand__sub">Texas A&amp;M Chapter | Region 2</div>
+        <div class="nav__dropdown" id="moreDropdown">
+          <button class="nav__link nav__button" type="button" aria-haspopup="menu" aria-expanded="false">
+            More <span class="chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="menu" role="menu" aria-label="More">
+            <a role="menuitem" class="menu__item" href="./team.html">Team</a>
+            <a role="menuitem" class="menu__item" href="./activities.html">Activities</a>
+            <a role="menuitem" class="menu__item" href="./sponsors.html">Sponsors</a>
+            <a role="menuitem" class="menu__item" href="./contact.html">Contact</a>
           </div>
+        </div>
+
+        <a class="iconbtn" href="https://instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
+            />
+          </svg>
         </a>
+      </nav>
+    </div>
+  </header>
 
-        <nav class="nav" aria-label="Primary">
-          <a class="nav__link" href="#home">Home</a>
-          <a class="nav__link nav__link--active" href="#about">About</a>
+  <main class="hero">
+    <section class="hero__inner">
+      <img class="hero__emblem" src="./images/legacy_logo1-1.png" alt="MAES emblem" />
+      <h1 class="hero__title">MAES: LATINOS IN ENGINEERING &amp; SCIENCE</h1>
+      <p class="hero__desc">
+        MAES is a cultural-based, professional student organization, created by and for individuals who are passionate
+        about maintaining cultural affiliation while pursuing professional goals. New members are always welcome, so
+        fill out our interest form now!
+      </p>
 
-          <div class="nav__dropdown" id="moreDropdown">
-            <button class="nav__link nav__button" type="button" aria-haspopup="menu" aria-expanded="false">
-              More
-              <span class="chev" aria-hidden="true">▾</span>
-            </button>
-            <div class="menu" role="menu" aria-label="More">
-              <a role="menuitem" class="menu__item" href="#events">Events</a>
-              <a role="menuitem" class="menu__item" href="#join">Join</a>
-              <a role="menuitem" class="menu__item" href="#contact">Contact</a>
-            </div>
+      <!-- Carousel (kept inside hero so spacing is easy) -->
+      <div class="carousel" aria-label="MAES photo carousel">
+        <div class="carousel__viewport" tabindex="0">
+          <div class="carousel__track">
+            <div class="carousel__slide"><img src="./images/maes1.jpg" alt="MAES photo 1" loading="lazy" /></div>
+            <div class="carousel__slide"><img src="./images/maes2.jpg" alt="MAES photo 2" loading="lazy" /></div>
+            <div class="carousel__slide"><img src="./images/maes3.jpg" alt="MAES photo 3" loading="lazy" /></div>
+            <div class="carousel__slide"><img src="./images/maes4.jpg" alt="MAES photo 4" loading="lazy" /></div>
+            <div class="carousel__slide"><img src="./images/maes5.jpeg" alt="MAES photo 5" loading="lazy" /></div>
+            <div class="carousel__slide"><img src="./images/maes6.jpg" alt="MAES photo 6" loading="lazy" /></div>
           </div>
 
-          <!-- Instagram icon -->
-          <a class="iconbtn" href="https://instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
-            <!-- simple inline icon -->
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
-              />
-            </svg>
-          </a>
-        </nav>
-      </div>
-    </header>
+          <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Previous slide">‹</button>
+          <button class="carousel__btn carousel__btn--next" type="button" aria-label="Next slide">›</button>
+        </div>
 
-    <!-- Hero -->
-    <main id="home" class="hero">
-      <section class="hero__inner">
-        <!-- Big center emblem -->
-        <!-- Put your emblem at /assets/maes-emblem.png (or change the path) -->
-        <img class="hero__emblem" src="./images/legacy_logo1-1.png" alt="MAES emblem" />
-
-        <h1 class="hero__title">MAES: LATINOS IN ENGINEERING &amp; SCIENCE</h1>
-
-        <p class="hero__desc">
-          MAES is a cultural-based, professional student organization, created by and for individuals who are passionate
-          about maintaining cultural affiliation while pursuing professional goals. New members are always welcome, so
-          fill out our interest form now!
-        </p>
-      </section>
-    </main>
-
-    <!-- Sections (placeholders so nav works) -->
-    <section id="about" class="section">
-      <div class="section__inner">
-        <h2>About</h2>
-        <p>Add your About content here.</p>
+        <div class="carousel__dots" role="tablist" aria-label="Carousel navigation"></div>
       </div>
     </section>
+  </main>
 
-    <section id="events" class="section">
-      <div class="section__inner">
-        <h2>Events</h2>
-        <p>Add events content here.</p>
-      </div>
-    </section>
-
-    <section id="join" class="section">
-      <div class="section__inner">
-        <h2>Join</h2>
-        <p>Add your interest form link here.</p>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="section__inner">
-        <h2>Contact</h2>
-        <p>Add contact info here.</p>
-      </div>
-    </section>
-
-    <script src="./script.js"></script>
-  </body>
+  <script src="./script.js"></script>
+</body>
 </html>
