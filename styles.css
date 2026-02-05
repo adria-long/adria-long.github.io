@@ -501,6 +501,227 @@ body{
   color: rgba(255,255,255,.70);
 }
 
+/* =========================
+   CONTACT PAGE
+   ========================= */
+.contact{
+  background: var(--green-hero);
+}
+
+.contact__inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 22px 90px;
+}
+
+.contact__header{
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.contact__kicker{
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.16);
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.92);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+}
+
+.contact__title{
+  margin: 14px 0 10px;
+  font-size: 46px;
+  line-height: 1.1;
+}
+
+.contact__subtitle{
+  margin: 0 auto;
+  max-width: 860px;
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.contact__grid{
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 22px;
+  align-items: start;
+}
+
+/* Left info card */
+.contactCard{
+  border-radius: 24px;
+  padding: 26px 26px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(8px);
+  text-align: left;
+}
+
+.contactCard__title{
+  margin: 0 0 14px;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: .2px;
+}
+
+.contactCard__block{
+  padding: 12px 0;
+  border-top: 1px solid rgba(255,255,255,.10);
+}
+.contactCard__block:first-of-type{ border-top: 0; }
+
+.contactCard__label{
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.75);
+  margin-bottom: 6px;
+}
+
+.contactCard__text{
+  color: rgba(255,255,255,.92);
+  line-height: 1.7;
+}
+
+.contactCard__link{
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,.35);
+  padding-bottom: 2px;
+}
+.contactCard__link:hover{
+  border-bottom-color: rgba(255,255,255,.75);
+}
+
+.contactCard__note{
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(0,0,0,.14);
+  border: 1px solid rgba(255,255,255,.12);
+  color: rgba(255,255,255,.85);
+  line-height: 1.6;
+  font-size: 13px;
+}
+
+/* Right form card */
+.formCard{
+  border-radius: 24px;
+  padding: 26px 26px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(8px);
+  text-align: left;
+}
+
+.formCard__title{
+  margin: 0 0 14px;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: .2px;
+}
+
+.form{
+  display: grid;
+  gap: 14px;
+}
+
+.form__row{
+  display: grid;
+  gap: 8px;
+}
+
+.form__label{
+  font-weight: 800;
+  font-size: 13px;
+  color: rgba(255,255,255,.92);
+}
+
+.req{
+  color: rgba(255,255,255,.75);
+  font-weight: 800;
+}
+
+.form__input,
+.form__textarea{
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(0,0,0,.14);
+  color: #fff;
+  padding: 12px 14px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder{
+  color: rgba(255,255,255,.55);
+}
+
+.form__input:focus,
+.form__textarea:focus{
+  border-color: rgba(255,255,255,.35);
+  box-shadow: 0 0 0 4px rgba(255,255,255,.08);
+}
+
+.form__btn{
+  margin-top: 6px;
+  width: 100%;
+  border: 0;
+  border-radius: 16px;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  color: #064b2c;
+  background: #ffffff;
+
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+
+.form__btn:hover{
+  background: #e6f4ec;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+}
+
+.form__btn:active{
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(0,0,0,.2);
+}
+
+.form__fineprint{
+  margin: 6px 0 0;
+  color: rgba(255,255,255,.65);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 950px){
+  .contact__grid{
+    grid-template-columns: 1fr;
+  }
+  .contact__title{
+    font-size: 38px;
+  }
+}
+
 /* responsive */
 @media (max-width: 980px){
   .team__title{ font-size: 36px; }

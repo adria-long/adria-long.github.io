@@ -3,60 +3,137 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MAES | About</title>
+  <title>MAES | Contact</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- (optional) bump v to avoid cache -->
+  <link rel="stylesheet" href="./styles.css?v=1.1.0" />
 </head>
 <body>
 
-  <!-- HEADER (paste the shared header here) -->
+  <!-- HEADER -->
   <header class="topbar">
     <div class="topbar__inner">
-        <a class="brand" href="./index.html">
+      <a class="brand" href="./index.html">
         <img class="brand__logo" src="./images/Logo_white.png" alt="MAES logo" />
         <div class="brand__text">
-            <div class="brand__name">MAES: LATINOS IN ENGINEERING &amp; SCIENCE</div>
-            <div class="brand__sub">Texas A&amp;M Chapter | Region 2</div>
+          <div class="brand__name">MAES: LATINOS IN ENGINEERING &amp; SCIENCE</div>
+          <div class="brand__sub">Texas A&amp;M Chapter | Region 2</div>
         </div>
-        </a>
+      </a>
 
-        <nav class="nav" aria-label="Primary">
+      <nav class="nav" aria-label="Primary">
         <a class="nav__link" href="./index.html">Home</a>
         <a class="nav__link" href="./about.html">About</a>
 
         <div class="nav__dropdown" id="moreDropdown">
-            <button class="nav__link nav__button" type="button" aria-haspopup="menu" aria-expanded="false">
+          <button class="nav__link nav__button nav__link--active" type="button" aria-haspopup="menu" aria-expanded="false">
             More <span class="chev" aria-hidden="true">▾</span>
-            </button>
-            <div class="menu" role="menu" aria-label="More">
+          </button>
+          <div class="menu" role="menu" aria-label="More">
             <a role="menuitem" class="menu__item" href="./team.html">Team</a>
             <a role="menuitem" class="menu__item" href="./activities.html">Activities</a>
             <a role="menuitem" class="menu__item" href="./sponsors.html">Sponsors</a>
             <a role="menuitem" class="menu__item" href="./contact.html">Contact</a>
-            </div>
+          </div>
         </div>
 
         <a class="iconbtn" href="https://www.instagram.com/maes.tamu/" target="_blank" rel="noreferrer" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
             <path
-                d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
+              d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
             />
-            </svg>
+          </svg>
         </a>
-        </nav>
+      </nav>
     </div>
-    </header>
+  </header>
 
+  <!-- CONTACT -->
+  <main class="contact">
+    <div class="contact__inner">
 
-  <main class="page">
-    <div class="page__inner">
-      <h1 class="page__title">Contact</h1>
-      <p class="page__text">Add your Contact content here.</p>
+      <header class="contact__header">
+        <span class="contact__kicker">We’d love to hear from you</span>
+        <h1 class="contact__title">Contact Us</h1>
+        <p class="contact__subtitle">
+          Have a question, want to collaborate, or interested in joining MAES? Send us a message and we’ll get back to you.
+        </p>
+      </header>
+
+      <section class="contact__grid" aria-label="Contact information and form">
+
+        <!-- Left: Info card -->
+        <aside class="contactCard">
+          <h2 class="contactCard__title">MAES: Latinos in Engineering &amp; Science</h2>
+
+          <div class="contactCard__block">
+            <div class="contactCard__label">Address</div>
+            <div class="contactCard__text">
+              481 Zachry Engineering Education Complex<br />
+              3127 TAMU | College Station, TX 77843-3127
+            </div>
+          </div>
+
+          <div class="contactCard__block">
+            <div class="contactCard__label">Email</div>
+            <a class="contactCard__link" href="mailto:maestamu.main@gmail.com">maestamu.main@gmail.com</a>
+          </div>
+
+          <div class="contactCard__block">
+            <div class="contactCard__label">Instagram</div>
+            <a class="contactCard__link" href="https://www.instagram.com/maes.tamu/" target="_blank" rel="noreferrer">
+              @maes.tamu
+            </a>
+          </div>
+
+          <div class="contactCard__note">
+            Tip: If you’re reaching out about membership, include your major + year so we can connect you faster.
+          </div>
+        </aside>
+
+        <!-- Right: Form card -->
+        <section class="formCard" aria-label="Contact form">
+          <h2 class="formCard__title">Send a Message</h2>
+
+          <!-- This form is front-end only unless you connect it to something -->
+          <form class="form" action="#" method="post" onsubmit="return false;">
+            <div class="form__row">
+              <label class="form__label" for="name">Name <span class="req">*</span></label>
+              <input class="form__input" id="name" name="name" type="text" placeholder="Enter your name" required />
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="email">Email <span class="req">*</span></label>
+              <input class="form__input" id="email" name="email" type="email" placeholder="Enter your email" required />
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="subject">Subject</label>
+              <input class="form__input" id="subject" name="subject" type="text" placeholder="Type the subject" />
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="message">Message</label>
+              <textarea class="form__textarea" id="message" name="message" rows="6" placeholder="Type your message here..."></textarea>
+            </div>
+
+            <button class="form__btn" type="submit">Submit</button>
+
+            <p class="form__fineprint">
+              This is a front-end form. If you want submissions to actually send, tell me whether you want
+              Google Forms, Formspree, or Netlify Forms and I’ll wire it up.
+            </p>
+          </form>
+        </section>
+
+      </section>
     </div>
   </main>
 
-  <script src="./script.js"></script>
+  <script src="./script.js?v=1.0.6"></script>
 </body>
 </html>
