@@ -712,6 +712,119 @@ body{
   line-height: 1.6;
 }
 
+/* =========================
+   ACTIVITIES PAGE
+   ========================= */
+.menu__item--active{
+  background: rgba(255,255,255,.10);
+  color: #fff;
+}
+
+.activities{
+  background: var(--green-hero);
+}
+
+.activities__inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 22px 90px;
+}
+
+.activities__header{
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.activities__kicker{
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.16);
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.92);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+}
+
+.activities__title{
+  margin: 14px 0 10px;
+  font-size: 46px;
+  line-height: 1.1;
+}
+
+.activities__subtitle{
+  margin: 0 auto;
+  max-width: 900px;
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* grid */
+.activities__grid{
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  align-items: start;
+}
+
+/* cards */
+.activityCard{
+  border-radius: 24px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  text-align: left;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+
+.activityCard:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(0,0,0,.32);
+  background: rgba(255,255,255,.085);
+}
+
+.activityCard__media{
+  aspect-ratio: 16 / 9; /* rectangular */
+  overflow: hidden;
+  background: rgba(0,0,0,.18);
+}
+
+.activityCard__media img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.activityCard__body{
+  padding: 18px 18px 20px;
+}
+
+.activityCard__title{
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: .2px;
+}
+
+.activityCard__text{
+  margin: 0;
+  color: rgba(255,255,255,.88);
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+/* responsive */
+@media (max-width: 900px){
+  .activities__title{ font-size: 38px; }
+  .activities__grid{ grid-template-columns: 1fr; }
+}
+
 /* Responsive */
 @media (max-width: 950px){
   .contact__grid{

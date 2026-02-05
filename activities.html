@@ -3,83 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MAES | About</title>
+  <title>MAES | Activities</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- bump v if Opera caches -->
+  <link rel="stylesheet" href="./styles.css?v=1.2.0" />
 </head>
 <body>
 
-   <!-- HEADER (paste the shared header here) -->
+  <!-- HEADER -->
   <header class="topbar">
     <div class="topbar__inner">
-        <a class="brand" href="./index.html">
+      <a class="brand" href="./index.html">
         <img class="brand__logo" src="./images/Logo_white.png" alt="MAES logo" />
         <div class="brand__text">
-            <div class="brand__name">MAES: LATINOS IN ENGINEERING &amp; SCIENCE</div>
-            <div class="brand__sub">Texas A&amp;M Chapter | Region 2</div>
+          <div class="brand__name">MAES: LATINOS IN ENGINEERING &amp; SCIENCE</div>
+          <div class="brand__sub">Texas A&amp;M Chapter | Region 2</div>
         </div>
-        </a>
+      </a>
 
-        <nav class="nav" aria-label="Primary">
+      <nav class="nav" aria-label="Primary">
         <a class="nav__link" href="./index.html">Home</a>
         <a class="nav__link" href="./about.html">About</a>
 
         <div class="nav__dropdown" id="moreDropdown">
-            <button class="nav__link nav__button" type="button" aria-haspopup="menu" aria-expanded="false">
+          <button class="nav__link nav__button nav__link--active" type="button" aria-haspopup="menu" aria-expanded="false">
             More <span class="chev" aria-hidden="true">▾</span>
-            </button>
-            <div class="menu" role="menu" aria-label="More">
+          </button>
+
+          <div class="menu" role="menu" aria-label="More">
             <a role="menuitem" class="menu__item" href="./team.html">Team</a>
-            <a role="menuitem" class="menu__item" href="./activities.html">Activities</a>
+            <a role="menuitem" class="menu__item menu__item--active" href="./activities.html">Activities</a>
             <a role="menuitem" class="menu__item" href="./sponsors.html">Sponsors</a>
             <a role="menuitem" class="menu__item" href="./contact.html">Contact</a>
-            </div>
+          </div>
         </div>
 
         <a class="iconbtn" href="https://www.instagram.com/maes.tamu/" target="_blank" rel="noreferrer" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
             <path
-                d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
+              d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
             />
-            </svg>
+          </svg>
         </a>
-        
-        <a
-        class="iconbtn"
-        href="https://linktr.ee/Maes.tamu"
-        target="_blank"
-        rel="noreferrer"
-        aria-label="Linktree"
-        >
-        <!-- Tree icon -->
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-            <!-- trunk -->
+
+        <a class="iconbtn" href="https://linktr.ee/Maes.tamu" target="_blank" rel="noreferrer" aria-label="Linktree">
+          <!-- tree icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M11 14h2v6h-2z"/>
-            <!-- canopy -->
-            <path d="M12 2
-                    C7 2, 4 6, 4 9
-                    c0 3, 2 5, 5 6
-                    h6
-                    c3-1, 5-3, 5-6
-                    c0-3-3-7-8-7z"/>
-        </svg>
+            <path d="M12 2 C7 2, 4 6, 4 9 c0 3, 2 5, 5 6 h6 c3-1, 5-3, 5-6 c0-3-3-7-8-7z"/>
+          </svg>
         </a>
-
-
-        </nav>
+      </nav>
     </div>
-    </header>
+  </header>
 
+  <!-- ACTIVITIES -->
+  <main class="activities">
+    <div class="activities__inner">
 
-  <main class="page">
-    <div class="page__inner">
-      <h1 class="page__title">Activities</h1>
-      <p class="page__text">Add your Activities content here.</p>
+      <header class="activities__header">
+        <span class="activities__kicker">Get involved • Build community • Grow professionally</span>
+        <h1 class="activities__title">Our Activities</h1>
+        <p class="activities__subtitle">
+          MAES hosts a mix of professional development and community-centered events throughout the semester.
+          Whether you’re looking to grow your skills or find your people, there’s something for everyone.
+        </p>
+      </header>
+
+      <section class="activities__grid" aria-label="Activities list">
+
+        <!-- General Meetings -->
+        <article class="activityCard">
+          <div class="activityCard__media">
+            <img src="./images/activities/genmeeting.jpg" alt="General meeting activity photo" loading="lazy" />
+          </div>
+          <div class="activityCard__body">
+            <h2 class="activityCard__title">General Meetings</h2>
+            <p class="activityCard__text">
+              Our regular meetings keep members connected through updates, guest speakers, and professional development topics.
+              Come for the info, stay for the community.
+            </p>
+          </div>
+        </article>
+
+        <!-- Workshops -->
+        <article class="activityCard">
+          <div class="activityCard__media">
+            <img src="./images/activities/workshop.jpg" alt="Workshop activity photo" loading="lazy" />
+          </div>
+          <div class="activityCard__body">
+            <h2 class="activityCard__title">Workshops</h2>
+            <p class="activityCard__text">
+              Hands-on sessions focused on building technical and career skills—resume reviews, interview prep, tools, and more.
+              Practical, supportive, and beginner-friendly.
+            </p>
+          </div>
+        </article>
+
+        <!-- Game Nights -->
+        <article class="activityCard">
+          <div class="activityCard__media">
+            <img src="./images/activities/gamenight.jpg" alt="Game night activity photo" loading="lazy" />
+          </div>
+          <div class="activityCard__body">
+            <h2 class="activityCard__title">Game Nights</h2>
+            <p class="activityCard__text">
+              Low-pressure, fun events where you can meet new people and relax. Great for making friends and building that MAES familia.
+            </p>
+          </div>
+        </article>
+
+        <!-- Socials -->
+        <article class="activityCard">
+          <div class="activityCard__media">
+            <img src="./images/activities/social.jpg" alt="Social event activity photo" loading="lazy" />
+          </div>
+          <div class="activityCard__body">
+            <h2 class="activityCard__title">Socials</h2>
+            <p class="activityCard__text">
+              Social events that bring members together outside of meetings, good vibes, bonding, and a welcoming space to connect across majors.
+            </p>
+          </div>
+        </article>
+
+        <!-- Community Service -->
+        <article class="activityCard">
+          <div class="activityCard__media">
+            <img src="./images/activities/commservice.jpg" alt="Community service activity photo" loading="lazy" />
+          </div>
+          <div class="activityCard__body">
+            <h2 class="activityCard__title">Community Service</h2>
+            <p class="activityCard__text">
+              Volunteer opportunities that let us give back and make an impact in the local community. Meaningful work + doing it together.
+            </p>
+          </div>
+        </article>
+
+      </section>
     </div>
   </main>
 
-  <script src="./script.js"></script>
+  <script src="./script.js?v=1.0.6"></script>
 </body>
 </html>
