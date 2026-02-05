@@ -3,60 +3,196 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MAES | About</title>
+  <title>MAES | Team</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- bump this if Opera caches -->
+  <link rel="stylesheet" href="./styles.css?v=1.0.8" />
 </head>
 <body>
 
-  <!-- HEADER (paste the shared header here) -->
+  <!-- HEADER -->
   <header class="topbar">
     <div class="topbar__inner">
-        <a class="brand" href="./index.html">
+      <a class="brand" href="./index.html">
         <img class="brand__logo" src="./images/Logo_white.png" alt="MAES logo" />
         <div class="brand__text">
-            <div class="brand__name">MAES: LATINOS IN ENGINEERING &amp; SCIENCE</div>
-            <div class="brand__sub">Texas A&amp;M Chapter | Region 2</div>
+          <div class="brand__name">MAES: LATINOS IN ENGINEERING &amp; SCIENCE</div>
+          <div class="brand__sub">Texas A&amp;M Chapter | Region 2</div>
         </div>
-        </a>
+      </a>
 
-        <nav class="nav" aria-label="Primary">
+      <nav class="nav" aria-label="Primary">
         <a class="nav__link" href="./index.html">Home</a>
         <a class="nav__link" href="./about.html">About</a>
 
         <div class="nav__dropdown" id="moreDropdown">
-            <button class="nav__link nav__button" type="button" aria-haspopup="menu" aria-expanded="false">
+          <button class="nav__link nav__button nav__link--active" type="button" aria-haspopup="menu" aria-expanded="false">
             More <span class="chev" aria-hidden="true">▾</span>
-            </button>
-            <div class="menu" role="menu" aria-label="More">
+          </button>
+          <div class="menu" role="menu" aria-label="More">
             <a role="menuitem" class="menu__item" href="./team.html">Team</a>
             <a role="menuitem" class="menu__item" href="./activities.html">Activities</a>
             <a role="menuitem" class="menu__item" href="./sponsors.html">Sponsors</a>
             <a role="menuitem" class="menu__item" href="./contact.html">Contact</a>
-            </div>
+          </div>
         </div>
 
         <a class="iconbtn" href="https://www.instagram.com/maes.tamu/" target="_blank" rel="noreferrer" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
             <path
-                d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
+              d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
             />
-            </svg>
+          </svg>
         </a>
-        </nav>
+      </nav>
     </div>
-    </header>
+  </header>
 
+  <!-- TEAM PAGE -->
+  <main class="team">
+    <div class="team__inner">
 
-  <main class="page">
-    <div class="page__inner">
-      <h1 class="page__title">Team</h1>
-      <p class="page__text">Add your Team content here.</p>
+      <header class="team__header">
+        <h1 class="team__title">2025–2026 Officers</h1>
+
+        <!-- Group Photo -->
+        <figure class="team__group">
+          <!-- replace with your real photo path -->
+          <img src="./images/officers/maesofficers.JPG" alt="MAES 2025–2026 officer team group photo" />
+        </figure>
+      </header>
+
+      <!-- Officers grid (15) -->
+      <section class="team__grid" aria-label="Officer list">
+
+        <!-- 1 -->
+        <article class="officer">
+          <img class="officer__img" src="./images/officers/emilyj.jpg" alt="Emily Juarez" />
+          <h3 class="officer__name">Emily Juarez</h3>
+          <div class="officer__role">President</div>
+          <div class="officer__meta">Data Engineering '26</div>
+        </article>
+
+        <!-- 2 -->
+        <article class="officer">
+          <img class="officer__img" src="./images/officers/karenc.jpg" alt="Karen Cabrera" />
+          <h3 class="officer__name">Karen Cabrera</h3>
+          <div class="officer__role">VP Internal</div>
+          <div class="officer__meta">Mechanical Engineering '26</div>
+        </article>
+
+        <!-- 3 -->
+        <article class="officer">
+          <img class="officer__img" src="./images/officers/yamig.jpg" alt="Yamileth Gonzalez" />
+          <h3 class="officer__name">Yamileth Gonzalez</h3>
+          <div class="officer__role">VP Internal Co-Director</div>
+          <div class="officer__meta">Architectural Engineering '27</div>
+        </article>
+
+        <!-- 4 -->
+        <article class="officer">
+          <img class="officer__img" src="./images/officers/albertof.jpg" alt="Officer 4" />
+          <h3 class="officer__name">Alberto Flores</h3>
+          <div class="officer__role">VP External</div>
+          <div class="officer__meta">Electrical Engineering '26</div>
+        </article>
+
+        <!-- 5 -->
+        <article class="officer">
+          <img class="officer__img" src="./images/officers/officer5.jpg" alt="Officer 5" />
+          <h3 class="officer__name">Jesus Hernandez</h3>
+          <div class="officer__role">VP External Chair</div>
+          <div class="officer__meta">Biological & Agricultural Engr '26</div>
+        </article>
+
+        <!-- 6 -->
+        <article class="officer">
+          <img class="officer__img" src="./images/officers/jeansd.jpg" alt="Officer 6" />
+          <h3 class="officer__name">Charlie Dailey</h3>
+          <div class="officer__role">Secretary</div>
+          <div class="officer__meta">Masters of Business Administration '26</div>
+        </article>
+
+        <!-- 7 -->
+        <article class="officer">
+          <img class="officer__img" src="./images/officers/officer7.jpg" alt="Officer 7" />
+          <h3 class="officer__name">Jaime Diaz</h3>
+          <div class="officer__role">Secretary Chair</div>
+          <div class="officer__meta">Petroleum Engineering '27</div>
+        </article>
+
+        <!-- 8 -->
+        <article class="officer">
+          <img class="officer__img" src="./images/officers/jennifers.jpg" alt="Officer 8" />
+          <h3 class="officer__name">Jennifer Santiago</h3>
+          <div class="officer__role">Treasurer</div>
+          <div class="officer__meta">Statistics '27</div>
+        </article>
+
+        <!-- 9 -->
+        <article class="officer">
+          <img class="officer__img" src="./images/officers/rodrigog.JPG" alt="Officer 9" />
+          <h3 class="officer__name">Rodrigo Garcia</h3>
+          <div class="officer__role">Treasurer Chair</div>
+          <div class="officer__meta">Financial Planning '28</div>
+        </article>
+
+        <!-- 10 -->
+        <article class="officer">
+          <img class="officer__img" src="./images/officers/vanessar.jpg" alt="Officer 10" />
+          <h3 class="officer__name">Vanessa Rodriguez</h3>
+          <div class="officer__role">Membership Director</div>
+          <div class="officer__meta">Ag Leadership & Development '26</div>
+        </article>
+
+        <!-- 11 -->
+        <article class="officer">
+          <img class="officer__img" src="./images/officers/paulr.jpg" alt="Officer 11" />
+          <h3 class="officer__name">Paul Rodriguez</h3>
+          <div class="officer__role">Membership Chair</div>
+          <div class="officer__meta">Electrical Engineering '27</div>
+        </article>
+
+        <!-- 12 -->
+        <article class="officer">
+          <img class="officer__img" src="./images/officers/boba.JPG" alt="Officer 12" />
+          <h3 class="officer__name">Bob Alva</h3>
+          <div class="officer__role">Events Director</div>
+          <div class="officer__meta">Electrical Engineering '27</div>
+        </article>
+
+        <!-- 13 -->
+        <article class="officer">
+          <img class="officer__img" src="./images/officers/kevinr.jpg" alt="Officer 13" />
+          <h3 class="officer__name">Kevin Rodriguez</h3>
+          <div class="officer__role">Events Chair</div>
+          <div class="officer__meta">Electrical Engineering '27</div>
+        </article>
+
+        <!-- 14 -->
+        <article class="officer">
+          <img class="officer__img" src="./images/officers/anac.JPG" alt="Officer 14" />
+          <h3 class="officer__name">Ana Canseco</h3>
+          <div class="officer__role">PR Director</div>
+          <div class="officer__meta">Kinesiology '27</div>
+        </article>
+
+        <!-- 15 -->
+        <article class="officer">
+          <img class="officer__img" src="./images/officers/thomasb.jpg" alt="Officer 15" />
+          <h3 class="officer__name">Thomas Beran</h3>
+          <div class="officer__role">PR Chair</div>
+          <div class="officer__meta">Environmental Engineering '27</div>
+        </article>
+
+      </section>
     </div>
   </main>
 
-  <script src="./script.js"></script>
+  <script src="./script.js?v=1.0.6"></script>
 </body>
 </html>
