@@ -4,14 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MAES | Home</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css?v=1.0.1">
 
+  <!-- bump version to beat cache -->
+  <link rel="stylesheet" href="./styles.css?v=1.0.2" />
 </head>
-<body>
 
+<body>
   <header class="topbar">
     <div class="topbar__inner">
       <a class="brand" href="./index.html">
@@ -23,7 +25,7 @@
       </a>
 
       <nav class="nav" aria-label="Primary">
-        <a class="nav__link" href="./index.html">Home</a>
+        <a class="nav__link nav__link--active" href="./index.html">Home</a>
         <a class="nav__link" href="./about.html">About</a>
 
         <div class="nav__dropdown" id="moreDropdown">
@@ -52,17 +54,12 @@
   <main class="hero">
     <section class="hero__inner">
       <div class="hero__heading">
-        <img
-            class="hero__emblem"
-            src="./images/legacy_logo1-1.png"
-            alt="MAES emblem"
-        />
-
+        <img class="hero__emblem" src="./images/legacy_logo1-1.png" alt="MAES emblem" />
         <div class="hero__titles">
-            <h1 class="hero__title">MAES: LATINOS IN</h1>
-            <h1 class="hero__title">ENGINEERING &amp; SCIENCE</h1>
+          <h1 class="hero__title">MAES: LATINOS IN</h1>
+          <h1 class="hero__title">ENGINEERING &amp; SCIENCE</h1>
         </div>
-        </div>
+      </div>
 
       <p class="hero__desc">
         MAES is a cultural-based, professional student organization, created by and for individuals who are passionate
@@ -70,26 +67,36 @@
         fill out our interest form now!
       </p>
 
-      <!-- Carousel (kept inside hero so spacing is easy) -->
-      <div class="carousel" aria-label="MAES photo carousel">
-        <div class="carousel__viewport" tabindex="0">
-          <div class="carousel__track">
-            <div class="carousel__slide"><img src="./images/maes1.jpg" alt="MAES photo 1" loading="lazy" /></div>
-            <div class="carousel__slide"><img src="./images/maes2.jpg" alt="MAES photo 2" loading="lazy" /></div>
-            <div class="carousel__slide"><img src="./images/maes3.jpg" alt="MAES photo 3" loading="lazy" /></div>
-            <div class="carousel__slide"><img src="./images/maes4.jpg" alt="MAES photo 4" loading="lazy" /></div>
-            <div class="carousel__slide"><img src="./images/maes5.jpeg" alt="MAES photo 5" loading="lazy" /></div>
-            <div class="carousel__slide"><img src="./images/maes6.jpg" alt="MAES photo 6" loading="lazy" /></div>
-          </div>
+      <a
+        class="join-btn"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdvNiYLkEtIqjsRhRG-IBVlJhgA0jotGyyDA3f4iKua0usoBg/viewform"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Join Now
+        </a>
 
-          <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Previous slide">‹</button>
-          <button class="carousel__btn carousel__btn--next" type="button" aria-label="Next slide">›</button>
-        </div>
+  <div class="carousel" aria-label="MAES photo carousel">
+    <div class="carousel__viewport" tabindex="0" aria-roledescription="carousel">
 
-        <div class="carousel__dots" role="tablist" aria-label="Carousel navigation"></div>
+      <div class="carousel__track">
+        <div class="carousel__slide"><img src="./images/maes1.jpg" alt="MAES photo 1"></div>
+        <div class="carousel__slide"><img src="./images/maes2.jpg" alt="MAES photo 2"></div>
+        <div class="carousel__slide"><img src="./images/maes3.jpg" alt="MAES photo 3"></div>
+        <div class="carousel__slide"><img src="./images/maes4.jpg" alt="MAES photo 4"></div>
+        <div class="carousel__slide"><img src="./images/maes5.jpeg" alt="MAES photo 5"></div>
+        <div class="carousel__slide"><img src="./images/maes6.jpg" alt="MAES photo 6"></div>
       </div>
-    </section>
-  </main>
-  <script src="./script.js?v=1.0.1"></script>
+
+      <!-- arrows: ONLY these -->
+      <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Previous slide">‹</button>
+      <button class="carousel__btn carousel__btn--next" type="button" aria-label="Next slide">›</button>
+    </div>
+
+    <div class="carousel__dots" role="tablist" aria-label="Carousel navigation"></div>
+  </div>
+
+  <!-- cache buster -->
+  <script src="./script.js?v=1.0.5"></script>
 </body>
 </html>
