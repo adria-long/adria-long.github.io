@@ -900,18 +900,20 @@ main{
 .sponsors__header{
   text-align: center;
   margin-bottom: 22px;
+  color:#064b2c;
 }
 
 .sponsors__title{
   margin: 14px 0 10px;
   font-size: 46px;
   line-height: 1.1;
+  color: #064b2c;
 }
 
 .sponsors__subtitle{
   margin: 0 auto;
   max-width: 900px;
-  color: var(--muted);
+  color:#064b2c;
   line-height: 1.7;
   font-size: 16px;
 }
@@ -951,7 +953,7 @@ main{
 .sponsorCta{
   margin-top: 26px;
   border-radius: 24px;
-  background: rgba(255,255,255,.06);
+  background: #064b2c;
   border: 1px solid rgba(255,255,255,.14);
   box-shadow: var(--shadow);
   padding: 24px;
