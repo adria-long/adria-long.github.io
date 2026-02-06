@@ -64,6 +64,14 @@ main{
   font-size: 14px;
   text-transform: uppercase;
 }
+
+.brand__divider{
+  width: 2px;
+  height: 36px;
+  background: white;
+  margin: 0 0px;
+}
+
 .brand__sub{
   font-weight: 600;
   font-size: 12px;
