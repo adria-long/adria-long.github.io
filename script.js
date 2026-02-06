@@ -78,6 +78,11 @@ document.addEventListener("DOMContentLoaded", () => {
       update();
     }
 
+    // Footer year
+    const y = document.getElementById("year");
+    if (y) y.textContent = new Date().getFullYear();
+
+
     prevBtn.addEventListener("click", () => goTo(index - 1));
     nextBtn.addEventListener("click", () => goTo(index + 1));
 
