@@ -489,13 +489,14 @@ main{
   margin: 10px 0 18px;
   font-size: 44px;
   letter-spacing: .3px;
+  color:#064b2c;
 }
 
 .team__group{
   margin: 0 auto 26px;
   width: min(760px, 92vw);
   border-radius: 18px;
-  background: rgba(255,255,255,.06);
+  background: #064b2c;
   border: 1px solid rgba(255,255,255,.14);
   box-shadow: var(--shadow);
   padding: 14px;
@@ -531,27 +532,28 @@ main{
   object-fit: cover;
   border: 6px solid rgba(255,255,255,.10);
   box-shadow: 0 16px 32px rgba(0,0,0,.28);
-  background: rgba(255,255,255,.06);
+  background: #064b2c;
 }
 
 .officer__name{
   margin: 10px 0 0;
   font-size: 20px;
   font-weight: 800;
+  color: #064b2c;
 }
 
 .officer__role{
   margin-top: -6px;
   font-size: 16px;
   font-weight: 700;
-  color: rgba(255,255,255,.92);
+  color: #064b2c;
 }
 
 .officer__meta{
   margin-top: -6px;
   font-size: 13px;
   font-weight: 700;
-  color: rgba(255,255,255,.70);
+  color: #064b2c;
 }
 
 /* =========================
