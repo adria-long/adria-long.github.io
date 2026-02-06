@@ -579,7 +579,7 @@ main{
   padding: 8px 14px;
   border-radius: 999px;
   border: 1px solid rgba(255,255,255,.16);
-  background: rgba(255,255,255,.06);
+  background: #064b2c;
   color: rgba(255,255,255,.92);
   font-weight: 800;
   font-size: 12px;
@@ -591,6 +591,7 @@ main{
   margin: 14px 0 10px;
   font-size: 46px;
   line-height: 1.1;
+  color:#064b2c;
 }
 
 .contact__subtitle{
@@ -599,6 +600,7 @@ main{
   color: var(--muted);
   line-height: 1.7;
   font-size: 16px;
+  color:#064b2c;
 }
 
 .contact__grid{
@@ -613,7 +615,7 @@ main{
 .contactCard{
   border-radius: 24px;
   padding: 26px 26px;
-  background: rgba(255,255,255,.07);
+  background: #064b2c;
   border: 1px solid rgba(255,255,255,.14);
   box-shadow: var(--shadow);
   backdrop-filter: blur(8px);
@@ -673,7 +675,7 @@ main{
 .formCard{
   border-radius: 24px;
   padding: 26px 26px;
-  background: rgba(255,255,255,.08);
+  background: #064b2c;
   border: 1px solid rgba(255,255,255,.14);
   box-shadow: var(--shadow);
   backdrop-filter: blur(8px);
