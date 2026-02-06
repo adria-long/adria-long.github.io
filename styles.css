@@ -459,8 +459,8 @@ body{
 .team__grid{
   margin-top: 18px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 40px 60px;
+  grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 x 4 */
+  gap: 40px 48px; /* slightly tighter horizontally */
   align-items: start;
 }
 
