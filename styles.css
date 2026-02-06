@@ -82,7 +82,7 @@ main{
   color: rgba(255,255,255,.9);
   text-decoration:none;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
   padding: 8px 4px;
   position:relative;
 }
@@ -146,7 +146,7 @@ main{
   color: rgba(255,255,255,.92);
   text-decoration:none;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
 }
 .menu__item:hover{
   background: rgba(255,255,255,.10);
