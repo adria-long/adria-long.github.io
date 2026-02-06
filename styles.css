@@ -236,9 +236,18 @@ main{
   width: min(900px, 92vw);
 }
 
+/* clip slides to the INSIDE frame */
+.carousel__window{
+  position: relative;
+  margin: 0 50px;        /* matches your frame inset */
+  overflow: hidden;      /* key: clips images */
+  border-radius: 20px;   /* matches frame rounding */
+  z-index: 2;            /* above the green fill */
+}
+
 .carousel__viewport{
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   border-radius: 20px;
   padding: 14px 0;
   outline: none;
