@@ -1049,14 +1049,20 @@ main{
 }
 
 .footer__inner{
-  max-width: 1280px;
+  /* ✅ fluid + professional like header */
+  max-width: 1600px;
+  width: 100%;
   margin: 0 auto;
-  padding: 36px 34px;
+
+  /* gutters scale with screen size */
+  padding: 36px clamp(16px, 4vw, 80px);
+
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 24px;
   align-items: center;
 }
+
 
 .footer__brand{
   display: flex;
@@ -1222,3 +1228,11 @@ main{
     padding: 0 clamp(24px, 5vw, 120px);
   }
 }
+
+@media (min-width: 1700px){
+  .footer__inner{
+    max-width: none; /* ✅ use full width on big monitors */
+    padding: 36px clamp(24px, 5vw, 120px);
+  }
+}
+
