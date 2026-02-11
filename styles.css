@@ -36,14 +36,21 @@ main{
 
 .topbar__inner{
   height: 84px;
-  max-width: 1280px;
+
+  /* ✅ fluid + professional: grows on big screens but still has nice gutters */
+  max-width: 1600px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 34px;
+
+  /* gutters scale with screen size */
+  padding: 0 clamp(16px, 4vw, 80px);
+
   display:flex;
   align-items:center;
   justify-content:space-between;
   gap: 22px;
 }
+
 
 .brand{
   display:flex;
@@ -1207,4 +1214,11 @@ main{
   .nav{ gap: 18px; }
   .hero__inner{ padding: 44px 16px 58px; }
   .hero__emblem{ width: 180px; }
+}
+
+@media (min-width: 1700px){
+  .topbar__inner{
+    max-width: none;              /* ✅ lets it use the full screen */
+    padding: 0 clamp(24px, 5vw, 120px);
+  }
 }
