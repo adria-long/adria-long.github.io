@@ -1351,68 +1351,38 @@ main{
 }
 
 /* =========================
-   SPONSORS — MOBILE FIX
+   SPONSORS — CLEAN MOBILE COLUMN
    ========================= */
 @media (max-width: 760px){
 
   .sponsors__inner{
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 18px;
+    padding-right: 18px;
   }
 
-  /* 2 columns instead of 3 */
+  /* single vertical column */
   .sponsors__grid{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 
-  /* smaller + tighter cards */
   .sponsorLogo{
-    padding: 14px;
-    min-height: 120px;
-    border-radius: 18px;
+    padding: 24px;
+    min-height: 160px;
+    border-radius: 22px;
   }
 
-  /* logo scales better */
   .sponsorLogo img{
-    width: 92%;
-    max-height: 70px;
-    filter: none; /* drop shadow can look muddy on small screens */
+    width: min(300px, 85%);
+    max-height: 90px;
+    filter: drop-shadow(0 6px 14px rgba(0,0,0,.18));
   }
 
-  /* CTA block spacing */
-  .sponsorCta{
-    padding: 18px;
+  .sponsors__title{
+    font-size: 34px;
   }
 
-  .sponsorCta__title{
-    font-size: 22px;
-    line-height: 1.15;
-  }
-
-  .sponsorCta__text{
+  .sponsors__subtitle{
     font-size: 15px;
   }
 }
-
-/* super small phones: single column */
-@media (max-width: 420px){
-  .sponsors__grid{
-    grid-template-columns: 1fr;
-  }
-  .sponsorLogo{
-    min-height: 130px;
-  }
-  .sponsorLogo img{
-    max-height: 80px;
-    width: min(320px, 85%);
-  }
-}
-
-@media (max-width: 520px){
-  .sponsors__title{ font-size: 36px; }
-  .sponsors__subtitle{ font-size: 15px; }
-}
-
-
-
