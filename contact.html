@@ -6,13 +6,11 @@
   <title>MAES | Contact</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/legacy_logo1-1.png">
 
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
-  <!-- (optional) bump v to avoid cache -->
-  <link rel="stylesheet" href="./styles.css?v=1.1.0" />
+  <link rel="stylesheet" href="./styles.css?v=1.3.0" />
 </head>
 <body>
 
@@ -32,16 +30,15 @@
       <nav class="nav" aria-label="Primary">
         <a class="nav__link" href="./index.html">Home</a>
         <a class="nav__link" href="./about.html">About</a>
-
         <div class="nav__dropdown" id="moreDropdown">
-          <button class="nav__link nav__button nav__link--active" type="button" aria-haspopup="menu" aria-expanded="false">
-            More <span class="chev" aria-hidden="true">▾</span>
+          <button class="nav__link nav__button nav__link--active" type="button">
+            More <span class="chev">▾</span>
           </button>
-          <div class="menu" role="menu" aria-label="More">
-            <a role="menuitem" class="menu__item" href="./team.html">Team</a>
-            <a role="menuitem" class="menu__item" href="./activities.html">Activities</a>
-            <a role="menuitem" class="menu__item" href="./sponsors.html">Sponsors</a>
-            <a role="menuitem" class="menu__item" href="./contact.html">Contact</a>
+          <div class="menu">
+            <a class="menu__item" href="./team.html">Team</a>
+            <a class="menu__item" href="./activities.html">Activities</a>
+            <a class="menu__item" href="./sponsors.html">Sponsors</a>
+            <a class="menu__item menu__item--active" href="./contact.html">Contact</a>
           </div>
         </div>
       </nav>
@@ -60,9 +57,9 @@
         </p>
       </header>
 
-      <section class="contact__grid" aria-label="Contact information and form">
+      <section class="contact__grid">
 
-        <!-- Left: Info card -->
+        <!-- Info -->
         <aside class="contactCard">
           <h2 class="contactCard__title">MAES: Latinos in Engineering &amp; Science</h2>
 
@@ -76,99 +73,108 @@
 
           <div class="contactCard__block">
             <div class="contactCard__label">Email</div>
-            <a class="contactCard__link" href="mailto:maestamu.main@gmail.com">maestamu.main@gmail.com</a>
+            <a class="contactCard__link" href="mailto:maestamu.main@gmail.com">
+              maestamu.main@gmail.com
+            </a>
           </div>
 
           <div class="contactCard__block">
             <div class="contactCard__label">Instagram</div>
-            <a class="contactCard__link" href="https://www.instagram.com/maes.tamu/" target="_blank" rel="noreferrer">
+            <a class="contactCard__link" href="https://www.instagram.com/maes.tamu/" target="_blank">
               @maes.tamu
             </a>
           </div>
-
-          <div class="contactCard__note">
-            Tip: If you’re reaching out about membership, include your major + year so we can connect you faster.
-          </div>
         </aside>
 
-        <!-- Right: Form card -->
-        <section class="formCard" aria-label="Contact form">
+        <!-- Form -->
+        <section class="formCard">
           <h2 class="formCard__title">Send a Message</h2>
 
-          <!-- This form is front-end only unless you connect it to something -->
-          <form class="form" action="#" method="post" onsubmit="return false;">
+          <form class="form" id="contactForm">
             <div class="form__row">
-              <label class="form__label" for="name">Name <span class="req">*</span></label>
-              <input class="form__input" id="name" name="name" type="text" placeholder="Enter your name" required />
+              <label class="form__label" for="name">Name *</label>
+              <input class="form__input" id="name" name="name" type="text" required />
             </div>
 
             <div class="form__row">
-              <label class="form__label" for="email">Email <span class="req">*</span></label>
-              <input class="form__input" id="email" name="email" type="email" placeholder="Enter your email" required />
+              <label class="form__label" for="email">Email *</label>
+              <input class="form__input" id="email" name="email" type="email" required />
             </div>
 
             <div class="form__row">
               <label class="form__label" for="subject">Subject</label>
-              <input class="form__input" id="subject" name="subject" type="text" placeholder="Type the subject" />
+              <input class="form__input" id="subject" name="subject" type="text" />
             </div>
 
             <div class="form__row">
               <label class="form__label" for="message">Message</label>
-              <textarea class="form__textarea" id="message" name="message" rows="6" placeholder="Type your message here..."></textarea>
+              <textarea class="form__textarea" id="message" name="message" rows="6"></textarea>
             </div>
 
             <button class="form__btn" type="submit">Submit</button>
-
-            <p class="form__fineprint">
-              This is a front-end form. If you want submissions to actually send, tell me whether you want
-              Google Forms, Formspree, or Netlify Forms and I’ll wire it up.
-            </p>
           </form>
         </section>
 
       </section>
     </div>
   </main>
-<footer class="footer">
+
+  <!-- FOOTER -->
+  <footer class="footer">
     <div class="footer__inner">
-      <!-- Brand -->
       <div class="footer__brand">
         <img class="footer__logo" src="./images/Logo_white.png" alt="MAES logo" />
         <span class="brand__divider"></span>
         <img class="footer__logo" src="./images/TAM-Logo-white.png" alt="A&M Logo"/>
-        <div class="footer__brandText">
+        <div>
           <div class="footer__name">MAES TAMU</div>
           <div class="footer__tagline">Latinos in Engineering &amp; Science • Texas A&amp;M Chapter</div>
         </div>
       </div>
-
-      <!-- Social -->
-      <div class="footer__social">
-        <a class="footer__icon" href="https://www.instagram.com/maes.tamu/" target="_blank" rel="noreferrer" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/>
-          </svg>
-        </a>
-
-        <a class="footer__icon" href="https://www.linkedin.com/company/tamu-maes-latinos-in-science-and-engineering/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM.5 23.5h4V7.98h-4V23.5ZM8.5 7.98h3.8v2.12h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1v9.36h-4v-8.3c0-1.98-.04-4.52-2.76-4.52-2.76 0-3.18 2.16-3.18 4.39v8.43h-4V7.98Z"/>
-          </svg>
-        </a>
-
-        <a class="footer__icon" href="https://linktr.ee/Maes.tamu" target="_blank" rel="noreferrer" aria-label="Linktree">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M10.6 13.4a1 1 0 0 1 0-1.4l3.4-3.4a3 3 0 0 1 4.2 4.2l-1.7 1.7a1 1 0 1 1-1.4-1.4l1.7-1.7a1 1 0 0 0-1.4-1.4l-3.4 3.4a1 1 0 0 1-1.4 0Z"/>
-            <path d="M13.4 10.6a1 1 0 0 1 0 1.4L10 15.4a3 3 0 1 1-4.2-4.2l1.7-1.7A1 1 0 1 1 8.9 11L7.2 12.7a1 1 0 1 0 1.4 1.4l3.4-3.4a1 1 0 0 1 1.4 0Z"/>
-          </svg>
-        </a>
-      </div>
     </div>
-
     <div class="footer__bottom">
-      <span>© <span id="year"></span> MAES Texas A&amp;M • Built with care</span>
+      © <span id="year"></span> MAES Texas A&amp;M
     </div>
   </footer>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    emailjs.init("OIcywgbTOZvb0Urke");
+
+    const contactForm = document.getElementById("contactForm");
+
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const btn = contactForm.querySelector("button");
+      const originalText = btn.textContent;
+
+      btn.disabled = true;
+      btn.textContent = "Sending...";
+
+      emailjs.sendForm(
+        "service_gv78ye7",
+        "template_i069p3t",
+        contactForm
+      ).then(
+        function () {
+          btn.textContent = "Sent!";
+          contactForm.reset();
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.disabled = false;
+          }, 2000);
+        },
+        function (error) {
+          console.error("EmailJS error:", error);
+          alert("Something went wrong. Please try again.");
+          btn.disabled = false;
+          btn.textContent = originalText;
+        }
+      );
+    });
+  </script>
 
   <script src="./script.js?v=1.0.6"></script>
 </body>
