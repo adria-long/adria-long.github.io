@@ -1429,3 +1429,46 @@ main{
   }
 
 }
+
+/* =========================
+   CALENDAR RESPONSIVE
+   ========================= */
+
+/* Tablet */
+@media (max-width: 900px){
+
+  .calendarSection{
+    width: min(560px, 92vw);
+    text-align: center;
+  }
+
+  .calendarSection__title{
+    font-size: 36px;
+  }
+
+  .calendarFrame{
+    height: 520px;
+  }
+}
+
+/* Phone */
+@media (max-width: 520px){
+
+  .calendarSection{
+    width: 94vw;
+    margin-top: 26px;
+  }
+
+  .calendarSection__title{
+    font-size: 28px;
+  }
+
+  .calendarCard{
+    border-width: 6px;
+    border-radius: 18px;
+  }
+
+  .calendarFrame{
+    height: 420px;   /* key for phone usability */
+  }
+}
